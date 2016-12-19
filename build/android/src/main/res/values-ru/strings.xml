@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- подготовка к запуску -->
+    <string name="rm_old">Подготовка к обновлению&#8230;</string>
+    <string name="loading">Загрузка&#8230;</string>
+    <string name="notification_title">Загрузка FreeCraft</string>
+    <string name="notification_description">Осталось меньше минуты&#8230;</string>
+    <string name="not_enough_space">Недостаточно места для распаковки.\nОсвободите пространство в памяти устройства!</string>
+    <!-- разрешения -->
+    <string name="explain">Для корректной работы, игре требуется разрешение записывать в память устройтсва.</string>
+    <string name="location">Знание местоположения обеспечивает Вам лучшее взаимодействие с игрой</string>
+    <!-- диалог оценки -->
+    <string name="rta_dialog_title">Оцените FreeCraft!</string>
+    <string name="rate_title">Название</string>
+    <string name="rate_submit">ОЦЕНИТЬ</string>
+    <string name="rate_description">Описание</string>
+    <string name="sad">Нам жаль, что Вам не понравилась игра!</string>
+    <string name="recommend">Загрузка рекомендаций \n для Вас \n%1$s</string>
+    <!-- обновление -->
+    <string name="ignore">Игнорировать</string>
+    <string name="later">Позже</string>
+    <string name="update">Обновить</string>
+</resources>

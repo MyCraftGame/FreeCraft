@@ -1,0 +1,11 @@
+project 'FreeCraft/FreeCraft.xcodeproj'
+platform :ios, '8.0'
+
+target 'FreeCraft' do
+  pod 'SSZipArchive'
+  pod 'SDVersion'
+
+  #pod 'Appodeal/Core', '~> 1.1'
+  #pod 'Appodeal/Interstitial', '1.3.3'
+  #pod 'Appodeal/Video', '1.3.3'
+end

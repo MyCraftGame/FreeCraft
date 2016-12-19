@@ -1,0 +1,21 @@
+--- irrlicht/source/Irrlicht/Android/jni/Android.mk.orig	2016-02-15 05:33:03.000000000 +0200
++++ irrlicht/source/Irrlicht/Android/jni/Android.mk	2016-02-15 05:34:34.913711815 +0200
+@@ -11,7 +11,17 @@
+ ifndef NDEBUG
+ LOCAL_CFLAGS += -g -D_DEBUG
+ else
+-LOCAL_CFLAGS += -fexpensive-optimizations -O3
++ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
++LOCAL_CFLAGS    += -mfpu=vfpv4 -march=armv7-a -Ofast -fdata-sections -ffunction-sections -fvisibility=hidden -flto
++LOCAL_CXXFLAGS += -mfpu=vfpv4 -march=armv7-a -Ofast -fdata-sections -ffunction-sections -fvisibility=hidden -flto
++LOCAL_LDFLAGS   += -Wl,--no-warn-mismatch,--gc-sections
++endif
++ifeq ($(TARGET_ARCH_ABI),x86)
++LOCAL_CFLAGS += -mhard-float -Ofast -fdata-sections -ffunction-sections -fmodulo-sched -fmodulo-sched-allow-regmoves -fvisibility=hidden -fno-stack-protector
++LOCAL_CXXFLAGS += -Ofast -fdata-sections -ffunction-sections -fmodulo-sched -fmodulo-sched-allow-regmoves -fvisibility=hidden
++LOCAL_LDFLAGS = -Wl,--no-warn-mismatch,--gc-sections
++LOCAL_DISABLE_FATAL_LINKER_WARNINGS := true
++endif
+ endif
+ 
+ LOCAL_C_INCLUDES := ../../../include

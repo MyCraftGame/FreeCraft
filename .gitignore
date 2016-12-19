@@ -1,0 +1,89 @@
+## Editors and Development environments
+*~
+*.swp
+*.bak*
+*.orig
+# Vim
+*.vim
+# Kate
+.*.kate-swp
+.swp.*
+# KDevelop4
+.kdev4/
+*.kdev4
+# Eclipse (CDT and LDT)
+.project
+.cproject
+.settings/
+.buildpath
+.metadata
+# GNU Global
+tags
+!tags/
+gtags.files
+# OS X
+.DS_Store
+
+# GNU Patch reject file
+*.rej
+
+
+## Non-static FreeCraft directories or symlinks to these
+/bin/
+/cache
+/screenshots
+
+## Configuration/log files
+debug.txt
+freecraft.conf
+
+## Doxygen files
+doc/Doxyfile
+doc/html/
+doc/doxygen_*
+
+## Build files
+CMakeFiles
+Makefile
+!build/android/Makefile
+cmake_install.cmake
+CMakeCache.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+src/android_version.h
+src/android_version_githash.h
+src/cmake_config.h
+src/cmake_config_githash.h
+src/lua/build/
+locale/
+.directory
+*.cbp
+*.layout
+*.o
+*.a
+
+## Android build files
+build/android/src/main/assets
+build/android/build
+build/android/deps
+build/android/libs
+build/android/jni/src
+build/android/src/main/jniLibs
+build/android/obj
+build/android/local.properties
+build/android/src/main/java/com/freecraft/pocket/edition/AdManager.java
+build/android/.gradle
+timestamp
+
+## iOS build files
+build/iOS/FreeCraft/FreeCraft.xcodeproj/xcuserdata
+build/iOS/FreeCraft/FreeCraft.xcodeproj/project.xcworkspace
+build/iOS/FreeCraft/FreeCraft/Assets.xcassets/AppIcon.appiconset/*.png
+build/iOS/FreeCraft.xcworkspace
+build/iOS/Pods
+build/iOS/Podfile.lock
+build/iOS/deps/*
+!build/iOS/deps/*.sh
+build/iOS/assets.zip
+build/iOS/worlds.zip
+build/iOS/Ads
